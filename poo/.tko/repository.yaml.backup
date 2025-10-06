@@ -1,10 +1,17 @@
-remote: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
-lang: py
-filter:
-- BLOCO_A
-- BLOCO_B
-version: 0.0.1
-database: database
+version: '0.2'
+sources:
+- database: database
+  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  cache_path: C:\Users\vivi5\OneDrive\Documentos\poo_cd\poo-dd-cd-bloco-a-Viih-cavalcante\poo\.tko\cache\database.md
+  cache_timestamp: '2025-10-06 15:56:32'
+  filters:
+  - BLOCO_A
+  - BLOCO_B
+- database: local
+  link: ''
+  cache_path: ''
+  cache_timestamp: ''
+  filters: null
 expanded:
 - configuracao-e-aquecimento
 - bloco_a-configuração-de-ambiente
@@ -12,11 +19,22 @@ expanded:
 - bloco_a-treino-de-algoritmos
 - campanha-principal
 - bloco_b-primeiras-classes
-tasks: {}
+- bloco_b-modificadores-de-acesso
+- bloco_b-agregação-simples
+tasks:
+  animal: '{rate:100, human:minha_irma_faz_cc_me_ajudou_fazendo_em_outra_linguagem,
+    iagen:pedia_pro_gpt_mostrar_oq_tava_errado_quando_nao_dava_certo, alone:8, study:160}'
+  carro: '{rate:100, human:irma, iagen:tive_dificuldades_com_o_drive_e_, alone:7,
+    study:130}'
+  calculadora: '{rate:100, human:colega, iagen:nao_tava_achando_meu_erro_ai_o_gpt_destacou,
+    alone:7, study:130}'
+  enxugar: '{rate:100, human:sim_precisei_de_ajuda_na_main_demorei_muito_pq_quis_praticar_bastante_a_escrita_para_aprender_a_estrutura,
+    guide:sim_assisti_a_video_aula_ensinando_e_ainda_consegui_errar, alone:9, study:420}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
-index: toalha
+lang: py
+selected: toalha

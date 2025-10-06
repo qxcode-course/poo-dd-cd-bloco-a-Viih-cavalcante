@@ -80,7 +80,6 @@ towel.show()  # Azul P 10
 
 towel.wringOut()
 towel.show()  # Azul P 0
-
 towel = Towel("Verde", "G")
 print(towel.isDry()) # True
 towel.dry(30)

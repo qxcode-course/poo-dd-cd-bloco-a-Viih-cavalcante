@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-22_17-10-13",
+            "content": "@@ -835,12 +835,29 @@\n tness%7D%22%0A    \n+%0Avitoria = Tower%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-09-22_17-13-08",
+            "content": "@@ -3,17 +3,17 @@\n ass Towe\n-l\n+r\n :%0A    de\n@@ -83,21 +83,23 @@\n : str = \n+%22\n color\n+%22\n %0A       \n@@ -120,20 +120,22 @@\n : str = \n+%22\n size\n+%22\n %0A       \n@@ -758,18 +758,18 @@\n  def __s\n-t\n r\n+t\n __(self)\n@@ -843,23 +843,4 @@\n     \n-%0A    #testando%0A    \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-29_16-39-30",
+            "content": "@@ -571,20 +571,16 @@\n eturn 0%0A\n-   %0A\n     def \n@@ -599,28 +599,24 @@\n f) -%3E None:%0A\n-    \n      self.we\n@@ -656,27 +656,24 @@\n  bool:%0A     \n-   \n return self.\n@@ -681,24 +681,28 @@\n etness == 0%0A\n+    \n %0A    def sho\n@@ -722,25 +722,24 @@\n ne:%0A        \n- \n print(self)%0A\n@@ -777,25 +777,24 @@\n tr:%0A        \n- \n return f%22%7Bse\n@@ -802,16 +802,17 @@\n f.color%7D\n+ \n %7Bself.si\n@@ -814,16 +814,17 @@\n lf.size%7D\n+ \n %7Bself.we\n@@ -840,18 +840,8 @@\n    %0A\n-         %0A\n     \n@@ -858,75 +858,4 @@\n     \n-minha = Towel(%22vermelha%22, %22G%22)%0A    minha.show()%0A    minha.dry(5)%0A%0A%0A    \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-04_08-39-27",
+            "content": "@@ -867,23 +867,25 @@\n estando%0A\n-doguito\n+    minha\n  = Towel\n@@ -890,96 +890,58 @@\n el(%22\n-azul\n+vermelha\n %22, %22\n-M%22)%0Aprint(doguito)%0Adoguito.dry(15)%0Aprint(doguito)%0Adoguito.dry(10)%0Aprint(doguito)\n+G%22)%0A    minha.show()%0A    minha.dry(5)%0A\n %0A%0A  \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-04_09-16-27",
+            "content": "@@ -978,114 +978,8 @@\n o)%0A%0A\n-vitoria = Towel(%22rosa%22, %22P%22)%0Aprint(vitoria)%0Avitoria.dry(5)%0Aprint(vitoria)%0Avitoria.dry(10)%0Aprint(vitoria)%0A%0A\n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-04_09-18-01",
+            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n            self.color: str = color\n            self.size: str = size\n            self.wetness: int = 0\n\n    def dry(self, amount: int) -> None:\n        self.wetness += amount\n        if self.wetness > self.getMaxWetness():\n            print(\"Toalha enxarcada\")\n            self.wetness = self.getMaxWetness() \n\n    def getMaxWetness(self) -> int:\n        if self.size == \"p\":\n            return 10\n        if self.size == \"M\":\n            return 20\n        if self.size == \"G\":\n            return 30\n        return 0\n   \n    def wringOut(self) -> None:\n         self.wetness = 0\n\n    def isDry(self) -> bool:\n        return self.wetness == 0\n\n    def show(self) -> None:\n         print(self)\n    \n    def __str__(self) -> str:\n         return f\"{self.color}{self.size}{self.wetness}\"\n    \n         \n    #testando\ndoguito = Towel(\"azul\", \"M\")\nprint(doguito)\ndoguito.dry(15)\nprint(doguito)\ndoguito.dry(10)\nprint(doguito)\n\nvitoria = Towel(\"rosa\", \"P\")\nprint(vitoria)\nvitoria.dry(5)\nprint(vitoria)\nvitoria.dry(10)\nprint(vitoria)\n\n    ",
+            "lines": "50"
+        }
+    ]
+}
